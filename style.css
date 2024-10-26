@@ -1,0 +1,125 @@
+/* Importing google fonts (it can also be done inside HTML Head) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Changing the thr normal (16px) font to (10px) to make it more easier (Equalize the (px) with (rem)) */
+html {
+  font-size: 62.5%;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Centering the content */
+body {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  padding: 16px;
+  min-height: 100svh;
+  font-family: "Inter", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  scroll-behavior: smooth;
+  letter-spacing: 0.5px;
+}
+
+/* Profile Container */
+.profile-container {
+  background-color: hsl(0, 0%, 12%);
+  max-width: 34rem;
+  text-align: center;
+  padding: 3.2rem;
+  border-radius: 12px;
+}
+/* Centering the image and give it a proper width */
+.profile-img {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+/* The name of the person */
+.profile-name {
+  font-size: 2.4rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+/* The address */
+.profile-address {
+  font-size: 1.3rem;
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  margin-bottom: 2.6rem;
+}
+
+/* The Job */
+.profile-job {
+  font-size: 1.1rem;
+  margin: 1.2rem 0;
+  color: hsl(0, 0%, 90%);
+  margin-bottom: 2.2rem;
+  font-weight: 600;
+}
+
+/* Removing the decoration of all anchor elements */
+a {
+  text-decoration: none;
+}
+
+/* Styling the profile links */
+.social-list,
+.social-list a {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+li a {
+  padding: 1.3rem 8rem;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 6px;
+  color: hsl(0, 0%, 100%);
+
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+li a:hover,
+li a:active {
+  color: hsl(0, 0%, 20%);
+  background-color: hsl(75, 94%, 57%);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* The Footer (Optional) */
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 auto 50px;
+  font-weight: 800;
+}
+.attribution a {
+  color: hsl(75, 94%, 57%);
+}
+
+.attribution a:hover,
+.attribution a:active {
+  color: hsl(0, 0%, 50%);
+  transition: 0.3s;
+}
