@@ -45,7 +45,7 @@ body {
   width: 100px;
   max-width: 100%;
   height: auto;
-  border-radius: 300px;
+  border-radius: 50%;
   display: block;
   margin: 0 auto;
   margin-bottom: 2.5rem;
@@ -68,7 +68,7 @@ body {
 
 /* The Job */
 .profile-job {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 1.2rem 0;
   color: hsl(0, 0%, 90%);
   margin-bottom: 2.2rem;
@@ -78,6 +78,7 @@ body {
 /* Removing the decoration of all anchor elements */
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 /* Styling the profile links */
@@ -90,7 +91,9 @@ a {
 }
 
 li a {
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
   padding: 1.3rem 8rem;
+  max-width: 31rem;
   background-color: hsl(0, 0%, 20%);
   border-radius: 6px;
   color: hsl(0, 0%, 100%);
@@ -105,6 +108,12 @@ li a:active {
   background-color: hsl(75, 94%, 57%);
   transition: 0.3s;
   cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+li a:focus {
+  outline: 2px solid hsl(75, 94%, 57%);
+  outline-offset: 2px;
 }
 
 /* The Footer (Optional) */
